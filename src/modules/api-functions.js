@@ -29,7 +29,7 @@ const getWeather = (location) => {
   }
 
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${location}&days=7`,
+    `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${location}&days=7`,
     { mode: "cors" },
   )
     .then((response) => response.json())
