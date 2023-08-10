@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+}
+
+h1,
+h3,
+h4,
+h2 {
+  line-height: 0;
+}
+
+h3 {
+  color: #2196c4;
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 28px;
+  color: #2196c4;
+}
+
+h1 {
+  font-size: 68px;
+}
+
+#content {
+  background-image: linear-gradient(lightblue, skyblue);
+  display: grid;
+  grid-template-rows: 7% 20% 30% 43%;
+  height: 100vh;
+  width: 100vw;
+}
+
+//header
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.search-form {
+    display: flex;
+    gap: 2%;
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+    background-color: #2196c4;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2%;
+}
+
+input:focus {
+    border: 2px solid white;
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 50%;
+}
+
+button {
+    background-color: #2196c4;
+    color: black;
+    border: 1px solid #2196c4;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 2%;
+}
+
+button:hover {
+    background-color: skyblue;
+    border-color: skyblue;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+button:active {
+    background-color: #2196c4;
+    border-color: #2196c4;
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+//subheading
+.subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//current info
+.current {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1%;
+  margin: 0% 7% 0% 7%;
+  align-items: center;
+}
+
+.current .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current .right {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
+.current .right div div {
+  font-size: 24px;
+}
+
+//forecast
+.forecast-container {
+  text-align: center;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+}
+
+.forecast .day {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: left;
+  font-size: 24px;
+  width: 75%;
+  border-bottom: 3px solid white;
+  text-align: left;
+  line-height: 1.5;
+}
